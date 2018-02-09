@@ -13,16 +13,29 @@ x = -1
 P(X) = -5x^6 + 3x^4 + 2x^2 - 4x
 ```
 
-## Getting Started
+## Desarrollo
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+A continuación describimos las clases y algoritmos implementados para la resolución del problema
 
-### Prerequisites
+### Contador de operaciones
 
-What things you need to install the software and how to install them
+Para el conteo de operaciones se utiliza una clase estatica que lleve el conteo de operaciones realizadas
 
 ```
-Give examples
+class OperationCounter:
+	count = 0
+
+	@staticmethod
+	def init():
+		OperationCounter.count = 0
+
+	@staticmethod
+	def number(n):
+		return OperationCounterNumber(n)
+
+	@staticmethod
+	def inc_count(n = 1):
+		OperationCounter.count += n
 ```
 
 ### Installing
