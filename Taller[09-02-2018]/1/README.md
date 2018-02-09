@@ -77,7 +77,7 @@ def horner_diff(poly,x):
 
 ### Método directo
 
-La implementacion del metodo directo `eval_poly(poly,x)`, así como el metodo directo sobre la derivada del polinomio `eval_poly_diff(poly,x)` es la siguiente: 
+La implementacion del método directo `eval_poly(poly,x)`, así como el método directo sobre la derivada del polinomio `eval_poly_diff(poly,x)` es la siguiente: 
 
 ```python
 def eval_poly(poly,x):
@@ -99,7 +99,7 @@ def eval_poly_diff(poly,x):
 
 ## Resultados
 
-A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios presentados al [comienzo](#head). Debe tenerse en cuenta que al evaluar el número de operaciones de un polinomio se calcula como si el polinomio estubiera **completo**. Es decir `x^2` no realiza 1 operación si no que se calcula como `1*x^2 + 1*x + 0` y utilizado ésta [ecuación](#npoly) el número de operaciones será `(2ˆ2 + 3*2)/2 = 5`. Para comprobar los resultados correr [sol.py](https://github.com/imwiwiim90/claseAnalisisNumerico/blob/master/Taller%5B09-02-2018%5D/1/sol.py)
+A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios presentados al [comienzo](#head). Debe tenerse en cuenta que al evaluar el número de operaciones de un polinomio se calcula como si el polinomio estubiera **completo**. Es decir `x^2` no realiza 1 operación si no que se calcula como `1*x^2 + 1*x + 0` y utilizando ésta [ecuación](#npoly) el número de operaciones será `(2ˆ2 + 3*2)/2 = 5`. Para comprobar los resultados correr [sol.py](https://github.com/imwiwiim90/claseAnalisisNumerico/blob/master/Taller%5B09-02-2018%5D/1/sol.py)
 
 Polinomio | x | Resultado | No. Operaciones (Directo) | No. Operaciones (Horner)
 ------------ | ------------- | ------------- | ------------- | ------------- 
