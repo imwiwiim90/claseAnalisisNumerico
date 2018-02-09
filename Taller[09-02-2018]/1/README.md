@@ -99,7 +99,13 @@ def eval_poly_diff(poly,x):
 
 ## Resultados
 
-A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios presentados al [comienzo](#head). Debe tenerse en cuenta que al evaluar el número de operaciones de un polinomio se calcula como si el polinomio estubiera **completo**. Es decir `x^2` no realiza 1 operación si no que se calcula como `1*x^2 + 1*x + 0` y utilizado ésta [ecuación](#npoly) el número de operaciones será `(2ˆ2 + 3*2)/2 = 5`
+A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios presentados al [comienzo](#head). Debe tenerse en cuenta que al evaluar el número de operaciones de un polinomio se calcula como si el polinomio estubiera **completo**. Es decir `x^2` no realiza 1 operación si no que se calcula como `1*x^2 + 1*x + 0` y utilizado ésta [ecuación](#npoly) el número de operaciones será `(2ˆ2 + 3*2)/2 = 5`.
+
+Polinomio | x | Resultado | No. Operaciones (Directo) | No. Operaciones (Horner)
+------------ | ------------- | ------------- | ------------- | ------------- 
+2x^4 - 3x^2 + 3x - 4        | -2 | 10  | 15 | 8 |
+7x^5 + 6x^4 - 6x^3 + 3x - 4 |  3 | 2030| 21 | 10|
+-5x^6 + 3x^4 + 2x^2 - 4x    | -1 | 4   | 28 | 12|
 
 
 
