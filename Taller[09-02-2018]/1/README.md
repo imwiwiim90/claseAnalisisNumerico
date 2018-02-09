@@ -1,4 +1,4 @@
-# Método Horner
+# <a name="head"></a>Método Horner
 
 Evaluar el polinomio en cada valor indicado y el número de operaciones mínimo para hacerlo, para los siguientes polinomios junto con sus derivadas:
 
@@ -96,3 +96,7 @@ def eval_poly_diff(poly,x):
 		diff_poly.push(a*n)
 	return eval_poly(diff_poly,x)
 ```
+
+## Resultados
+
+A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios al [comienzo](#head).
