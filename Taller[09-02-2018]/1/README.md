@@ -38,7 +38,11 @@ class OperationCounter:
 		OperationCounter.count += n
 ```
 
-El contador debe inicializarse para dar inicio al conteo de operaciones `OperationCounter.init()`. Cada vez que se realize una operación se debe `OperationCounter.inc_count()`
+El contador debe inicializarse para dar inicio al conteo de operaciones `OperationCounter.init()`. Cada vez que se realize una operación se debe llamar al incrementador del contador `OperationCounter.inc_count()`. 
+
+Para realizar el conteo de operaciones sin necesidad de llamar a la clase cada vez que se realize una operación, `OperationCounter.number(n)` devuelve una clase con el comportamiento de una variable numérica, la cual cada vez que se realize una operacion aritmetica sobre esta, incrementará el contador
+
+
 
 
 
