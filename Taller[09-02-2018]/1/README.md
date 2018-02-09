@@ -24,7 +24,8 @@ Si se tiene en cuenta los coeficientes de los monomios las operaciones requerida
 (n^2 + 3n)/2
 ```
 
-El algoritmo de Horner solo requiere `n` sumas y `n` productos, por lo que se requieran `2n` operaciones
+El algoritmo de Horner solo requiere `n` sumas y `n` productos, por lo que se requieren `2n` operaciones
+
 ## Código
 
 A continuación describimos las clases y algoritmos implementados para la resolución del problema
@@ -56,7 +57,7 @@ Para realizar el conteo de operaciones sin necesidad de llamar a la clase cada v
 
 ### Algoritmo Horner
 
-La implementacion del algoritmo horner `horner(poly,x)`, asi como el algoritmo horner que evalua un punto sobre la derivada del polinomio `horner_diff(poly,x)` es la siguiente: 
+La implementacion del algoritmo horner `horner(poly,x)`, así como el algoritmo horner que evalua un punto sobre la derivada del polinomio `horner_diff(poly,x)` es la siguiente: 
 
 ```python
 def horner(poly,x): 
@@ -72,4 +73,26 @@ def horner_diff(poly,x):
 		b = a + b*x
 		Q.append(b)
 	return horner(Q,x)
+```
+
+### Método directo
+
+La implementacion del metodo directo `eval_poly(poly,x)`, así como el metodo directo sobre la derivada del polinomio `eval_poly_diff(poly,x)` es la siguiente: 
+
+```python
+def eval_poly(poly,x):
+	n = len(poly) - 1
+	ans = poly[0]*x**n
+	for a in poly[1:-1]:
+		n -= 1
+		ans = ans + a*x**n
+	ans = ans + poly[-1]
+	return ans
+
+def eval_poly_diff(poly,x):
+	diff_poly = []
+	n = len(poly) - 1
+	for a in poly[:-1]:
+		diff_poly.push(a*n)
+	return eval_poly(diff_poly,x)
 ```

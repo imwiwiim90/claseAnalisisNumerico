@@ -10,6 +10,12 @@ def eval_poly(poly,x):
 	ans = ans + poly[-1]
 	return ans
 
+def eval_poly_diff(poly,x):
+	diff_poly = []
+	n = len(poly) - 1
+	for a in poly[:-1]:
+		diff_poly.push(a*n)
+	return eval_poly(diff_poly,x)
 
 
 poly_1 = [OperationCounter.number(i) for i in [2,0,-3,3,-4]]
