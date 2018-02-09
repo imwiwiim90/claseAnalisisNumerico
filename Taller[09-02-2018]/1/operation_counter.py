@@ -18,7 +18,9 @@ class OperationCounterNumber:
 		return OperationCounterNumber(self.n * b.n)
 
 	def __div__(self,b):
+		OperationCounter.inc_count()
 		return OperationCounterNumber(self.n / b.n)
+		
 	def __pow__(self,b):
 		if (isinstance(b, OperationCounterNumber)):
 			b = b.n
@@ -32,7 +34,7 @@ class OperationCounter:
 
 	@staticmethod
 	def init():
-		count = 0
+		OperationCounter.count = 0
 
 	@staticmethod
 	def number(n):
