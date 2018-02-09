@@ -14,7 +14,7 @@ class OperationCounterNumber:
 		return OperationCounterNumber(self.n - b.n)
 
 	def __mul__(self,b):
-		if (isinstance(b, OperationCounter)):
+		if (isinstance(b, OperationCounterNumber)):
 			b = b.n
 		OperationCounter.inc_count()
 		return OperationCounterNumber(self.n * b)

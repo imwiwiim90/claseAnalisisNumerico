@@ -19,7 +19,7 @@ def horner(poly,x):
 
 def horner_diff(poly,x):
 	b = poly[0]
-	Q = []
+	Q = [b]
 	for a in poly[1:-1]:
 		b = a + b*x
 		Q.append(b)
