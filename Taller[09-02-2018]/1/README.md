@@ -19,7 +19,7 @@ A continuación describimos las clases y algoritmos implementados para la resolu
 
 ### Contador de operaciones
 
-Para el conteo de operaciones se utiliza una clase estatica que lleve el conteo de operaciones realizadas
+Para el conteo de operaciones se utiliza una clase con métodos estaticos que lleve el conteo de operaciones realizadas
 
 ```
 class OperationCounter:
@@ -38,9 +38,10 @@ class OperationCounter:
 		OperationCounter.count += n
 ```
 
-### Installing
 
-A step by step series of examples that tell you have to get a development env running
+### init
+
+Reinicia el contador de operaciones para iniciar el conteo
 
 Say what the step will be
 
