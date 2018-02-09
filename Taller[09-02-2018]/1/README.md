@@ -21,7 +21,7 @@ A continuación describimos las clases y algoritmos implementados para la resolu
 
 Para el conteo de operaciones se utiliza una clase con métodos estaticos que lleve el conteo de operaciones realizadas
 
-```
+```python
 class OperationCounter:
 	count = 0
 
@@ -38,10 +38,9 @@ class OperationCounter:
 		OperationCounter.count += n
 ```
 
+El contador debe inicializarse para dar inicio al conteo de operaciones `OperationCounter.init()`. Cada vez que se realize una operación se debe `OperationCounter.inc_count()`
 
-### init
 
-Reinicia el contador de operaciones para iniciar el conteo
 
 Say what the step will be
 
