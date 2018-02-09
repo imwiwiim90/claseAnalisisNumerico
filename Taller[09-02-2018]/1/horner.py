@@ -16,3 +16,11 @@ def horner(poly,x):
 	for a in poly[1:]:
 		b = a + b*x
 	return b
+
+def horner_diff(poly,x):
+	b = poly[0]
+	Q = []
+	for a in poly[1:-1]:
+		b = a + b*x
+		Q.append(b)
+	return horner(Q,x)
