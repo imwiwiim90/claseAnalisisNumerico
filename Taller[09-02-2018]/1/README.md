@@ -19,7 +19,7 @@ El número de operaciones requeridas para la evaluación de un monomio de grado 
 ```
 (n^2 + n)/2
 ```
-Si se tiene en cuenta los coeficientes de los monomios las operaciones requeridas serán:
+<a name="npoly"></a>Si se tiene en cuenta los coeficientes de los monomios las operaciones requeridas serán:
 ```
 (n^2 + 3n)/2
 ```
@@ -99,4 +99,8 @@ def eval_poly_diff(poly,x):
 
 ## Resultados
 
-A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios al [comienzo](#head).
+A continuación se muestran los resultados de los diferentes algoritmos sobre los polinomios presentados al [comienzo](#head). Debe tenerse en cuenta que al evaluar el número de operaciones de un polinomio se calcula como si el polinomio estubiera **completo**. Es decir `x^2` no realiza 1 operación si no que se calcula como `1*x^2 + 1*x + 0` y utilizado ésta [ecuación](#npoly) el número de operaciones será `(2ˆ2 + 3*2)/2 = 5`
+
+
+
+
