@@ -28,4 +28,4 @@ Fin
 1
 ```
 
-2. Dado que el algoritmo divide recurrentemente `n` en `2` el número requerido de operaciones es `T( n ) = floor(log_2(n))` donde `floor` es el operador de parte entera, dado que `T(n) <= log_2(n)` es equivalente a `O(log(n)`.
+2. Dado que el algoritmo divide recurrentemente `n` en `2` el número requerido de operaciones es `T( n ) = floor(log_2(n))` donde `floor` es el operador de parte entera, dado que `T(n) <= log_2(n)` es equivalente a `O(log_2(n)`.
