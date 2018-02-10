@@ -39,7 +39,7 @@ al evaluar la raíz cuadrada de 7, con un error de 10e-4 y un valor inicial de 1
 En el algoritmo la secuencia `{y_n}` esta dada por `y_n = g(y_(n-1))`, Lo que significa que este es un **algoritmo de punto fijo**. Para que la serie converja se deben cumplir ciertas propiedades de la función `g(x)`.
 
 1. La función es continua en un intervalo [a,b], su imágen está dentro del intervalo [a,b], para todo x en el intervalo [a,b].
-2. La derivada de la función, dígase `g'(x)` existe en el intervalo [a,b] y existe una constante `k` tal que `|g'(x)| < k`
+2. La derivada de la función, dígase `g'(x)` existe en el intervalo [a,b] y existe una constante `c` tal que `|g'(x)| < c` y `0 < |c| < 1`
 
 Para este caso en especial `g(x) = 1/2*(x + k/x)` (siendo `k` el número el cual quiere ser evaluado). Dado que `g(x)` no puede ser evaluado en `0` tomaremos un intervalo `[1,b]` para verificar que `g(x)` cumpla las condiciones descritas.
 
@@ -51,5 +51,9 @@ k > 1
 k < b^2 
 ```
 
+2. La derivada de la función es `g'(x) = -k/x^2`, debido a que la magnitud de la derivada debe ser menor a 1 en el intervalo: `k < b^2`.
 
+Esto significa que si `x_0` (el valor inicial), esta dentro del intervalo `[1,k^(1/2)]` la función converjera a un valor donde se cumple que `g(x) = x`, y cuando esto suceda es equivalente a `x = k^(1/2)` despues de reemplazar.
+
+### Convergencia 
 
