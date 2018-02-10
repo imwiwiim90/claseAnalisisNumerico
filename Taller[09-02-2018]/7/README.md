@@ -25,6 +25,6 @@ Se utiliza `R` para calcular la derivada de la función `d(t)`  en [sol.R](sol.R
 ```
 
 Esta a simple vista se sabe que es continua, si embargo su derivada puede tomar valores en `0` como se puede ver a continuación:
-![d'(t)](d'%28t%29.pdf)
+![d'(t)](d'%28t%29.png)
 ## Algoritmo
 
