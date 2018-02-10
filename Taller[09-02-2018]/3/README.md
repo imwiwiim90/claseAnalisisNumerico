@@ -69,7 +69,7 @@ Se sabe que el algoritmo de punto fijo tiene un error absoluto de la forma:
 | y_n - y | < c^n/(1-c)*| y_1 - x_0 |
 ```
 
-por lo que el error depende de las variables de entrada, para este caso, para este caso en particular:
+por lo que el error depende de las variables de entrada, para este caso en particular:
 
 ```
 | y_n - y | < c^n/(1-c)*| 1/2*(k/x_0 - x_0) |
