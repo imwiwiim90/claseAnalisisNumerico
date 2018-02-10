@@ -8,4 +8,4 @@ root <- function(n,E,x) {
 }
 
 
-root(7,1.e-4,50)
+root(7,1.e-4,4)
