@@ -2,7 +2,7 @@
 
 Implemente en R el siguiente algoritmo que sirve para calcular la raíz cuadrada. Aplíquelo para evaluar la raíz cuadrada de 7, analize su precisión, convergencia y validez.
 
-```r
+```
 Algoritmo: Raíz cuadrada
 Entra:	n	Dato
 		E 	Error permitido
@@ -19,7 +19,7 @@ Fin
 
 La implementación en R es la siguiente:
 
-```
+```r
 root <- function(n,E,x) {
 	y <- 1/2*(x+n/x)
 	while (abs(x - y) > E) {
