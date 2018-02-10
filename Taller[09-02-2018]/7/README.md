@@ -24,7 +24,43 @@ Se utiliza `R` para calcular la derivada de la función `d(t)`  en [sol.R](sol.R
 2 * (cos(t) * (sin(t) - 1)) - 2 * (2 * sin(t) * (2 * cos(t) - 2))
 ```
 
-Esta a simple vista se sabe que es continua, si embargo su derivada puede tomar valores en `0` como se puede ver a continuación:
+Esta a simple vista se sabe que es continua, si embargo su derivada `d''(t)` puede tomar valores en `0` como se puede ver a continuación `d'(t)`:
+
 ![d'(t)](d'%28t%29.png)
+
+Además se puede observar que tiene 2 raices. Por lo que se deben evaluar 4 puntos.
+
 ## Algoritmo
 
+El *algoritmo de Newton* implementado es el siguiente:
+
+```r
+newton <- function(f,x0,E) {
+
+	# derivative
+	df <- function(x) {}
+	body(df) <- D(body(f),'x')
+
+	y = x0 - f(x0)/df(x0)
+	while (abs(x0 - y) > E) {
+		x0 <- y
+		y = x0 - f(x0)/df(x0)
+	}
+	y
+}
+```
+
+El programa arroja que las dos raices se encuentran en `t1 = 0.5872`, `t2 = 0.3284*10^1`. Entonces el mínimo de `d(t)` se encuentran en una de estas raices o en los extremos del intervalo trabajado. De este modo: 
+
+```
+d(t1) =  0.3111
+d(t2) =  17.14
+d(0) =  1
+d(2π) =  1
+```
+
+Así que la gráfica `R(t)` se acerca mas al punto `P` cuando `t = 0.5872`.
+
+## Ilustración
+
+A continuación se muestra la gráfica que muestra los pasos y convergencia del *algoritmo de Newton* sobre `d(t)` con un valor inicial de `1`.
