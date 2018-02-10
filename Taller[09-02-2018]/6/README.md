@@ -16,7 +16,7 @@ Fin
 
 ## Desarrollo
 
-1. Al correr el algoritmo con `n = 73` se tiene:
+1. Al correr el algoritmo con `n = 73` utilizando [sol.py](sol.py) se tiene que:
 
 ```
 1
