@@ -63,4 +63,8 @@ Así que la gráfica `R(t)` se acerca mas al punto `P` cuando `t = 0.5872`.
 
 ## Ilustración
 
-A continuación se muestra la gráfica que muestra los pasos y convergencia del *algoritmo de Newton* sobre `d(t)` con un valor inicial de `1`.
+A continuación se muestra la gráfica que muestra los pasos y convergencia del *algoritmo de Newton* sobre `d'(t)` con un valor inicial de `1`. Los números en rojo sobre la gráfica indican el número de iteración.
+
+![d'(t)](d'%28t%29.png)
+
+Como se puede ver el algoritmo solo necesita de 3 iteraciones para llegar al resultado esperado
