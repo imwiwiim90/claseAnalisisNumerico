@@ -30,7 +30,7 @@ root <- function(n,E,x) {
 }
 ```
 
-al evaluar la raíz cuadrada de `7`, con un error de `10e-4` y un valor inicial de `4` <a name="example"></a>`root(4,1.e-4,4)` se tiene que el resultado es `2.645751`
+al evaluar la raíz cuadrada de `7`, con un error de `10e-4` y un valor inicial de `4` <a name="example"></a> se evalua `root(4,1.e-4,4)`  y se tiene que el resultado es `2.645751`
 
 ## Análisis
 
@@ -59,4 +59,18 @@ Esto significa que si el intervalo a considerar es de la forma `a = (k/3)^1/2` y
 
 ### Convergencia 
 
-El algoritmo de punto fijo tiene una razón de convergencia de `O(c^n)` donde c es menor a `1` el cual limita la derivada de `g(x)`. Pero los límites de la derivada de `g(x)` dependen del intervalo en el que se trabaje [a,b], y el valor que se quiera evaluar `k`. Más precisos para un `x_0` y `k` dado. Analizando el [ejemplo](#example) trabajado al inicio se tiene que `x_0 = 1.5` y `k = 7`, `c` esta dado por `1/2*(1-7/(4)^2) = 0.28125` dando una razón de convergencia de `O(0.28^n)`.  
+El algoritmo de punto fijo tiene una razón de convergencia de `O(c^n)` donde c es menor a `1` el cual limita la derivada de `g(x)`. Pero los límites de la derivada de `g(x)` dependen del intervalo en el que se trabaje [a,b], y el valor que se quiera evaluar `k`. Más precisos para un `x_0` y `k` dado. Analizando el [ejemplo](#example) trabajado al inicio se tiene que `x_0 = 1.5` y `k = 7`, `c` esta dado por `1/2*(1-7/(4)^2) = 0.28125` dando una razón de convergencia de `O(0.28^n)`. 
+
+### Presición
+
+Se sabe que el algoritmo de punto fijo tiene un error absoluto de la forma:
+
+```
+| y_n - y | < c^n/(1-c)*| y_1 - x_0 |
+```
+
+por lo que el error depende de las variables de entrada, para este caso, para este caso en particular:
+
+```
+| y_n - y | < c^n/(1-c)*| 1/2*(k/x_0 - x_0) |
+```
