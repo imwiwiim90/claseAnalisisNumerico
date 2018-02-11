@@ -9,7 +9,7 @@ r_2 = function(t) ( (2 - exp(t)) )
 
 r = function(t) (t)
 
-png('intersecion.png')
+png('interseccion.png')
 
 radial.plot(sapply(t,r_1),t,rp.type='s',radial.lim=c(0,5),point.symbols='.')
 par(new=TRUE)
