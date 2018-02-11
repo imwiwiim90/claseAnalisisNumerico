@@ -51,7 +51,31 @@ Con estos datos se definieron las posibilidades reales siendo estas la primera d
 la ultima al ser tan grande sobrepasaria el tamaño de uno de los lados.
 
 
-El segundo metodo utilizado fue en c++
+El segundo metodo utilizado fue en c++ para este metodo se decidio multiplicar la funcion para dejarla en terminos de 
+ax^3+bx^2+cx, esto con el fin de poder derivar dicha funcion y hacer asi uso de la ecuacion cuadratica, para obtener
+2 resultados de los cuales uno fue descartado debido a que igual que con el metodo en python este superaba el
+tamaño de los lados.
+
+La solucion fue obtenida por las siguientes impresiones:
+
+```c++
+    cout<<(28+sqrt(208))/(3);
+   
+    cout<<(28-sqrt(208))/(3);
+
+```
+
+Con estas soluciones se obtuvo los siguientes resultados:
+
+
+```
+    4.53
+    
+    14.14
+
+```
+Como fue mencionado anteriormente el resultado de 14.14 fue descartado puesto que supera los limites de la caja.
+
 
 ## Analisis 
 
@@ -76,4 +100,5 @@ o la mayoria de las veces disponemos de tecnologia a nuestro alcance para obtene
 el instrumentar computacionalmente nos da la ventaja de evitar partes del desarrollo de ejercicios que 
 tienden a ser demasiado complicadas y tienden a tomar mayor tiempo del deseado.
 
-6.
+6. Es importante validar los datos puesto que esto nos permite saber si no existen otras respuestas
+con un indice menor de error, a las actualmente obtenidas.
