@@ -28,7 +28,7 @@ Para hallar la razón de convergencia. Sea la serie `{y_n}` que converge a un nu
 | y_n - y | <= | K*B_n | , para un n grande.
 ```
 
-Para nuestro caso `| y_n - y |` el cual es equivalente a `|(a_n + b_n)/2 - y|` y este a su vez es menor que `| ( a_(n-1) + b_(n-1) )/2 - y |`. Iterando se tiene que:
+Para nuestro caso `| y_n - y |` el cual es equivalente a `|(a_n + b_n)/2 - y|` y este a su vez es menor que `1/2| ( a_(n-1) + b_(n-1) )/2 - y |`. Iterando se tiene que:
 
 ```
 | y_n - y | = |(a_n + b_n)/2 - y| < 1/2| ( a_(n-1) + b_(n-1) )/2 - y | < ... < (1/2)^n| ( a_0 + b_0 )/2 - y | < (1/2)^n | (a_0 + b+0)/2 |
