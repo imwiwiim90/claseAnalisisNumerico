@@ -2,7 +2,7 @@
 
 Encuentre una fórmula iterativa de convergencia cuadrática y defina un intervalo de convergencia apropiado para calcular la raíz n-énesima de un número real. El algoritmo sólamente debe incluir operaciones aritmétricas elementales.
 
-# Algoritmo
+## Algoritmo
 
 Sea `k` el número real el cual se quiere hallar su raíz, `n` al orden de la raíz. Se quiere halla un número `y` tal que `y = k^(1/n)`.
 
@@ -18,7 +18,29 @@ La idea es acotar el intervalo de trabajo `[a,b]` por un nuevo `[a_n,b_n]` tal q
 
 Y de esta forma nos aseguramos que el intervalo `[a_n,b_n]` siempre contenga la respuesta.
 
-# Código
+Como intervalo inicial se propone el intervalo `[0,k]` ya que la raíz estará dentro de este intervalo.
+
+## Convergencia
+
+Para hallar la razón de convergencia. Sea la serie `{y_n}` que converge a un numero `y`, y para una serie `{B_n}` que se sabe que converge a `0`, la serie `{y_n}` converge a `y` con una razón de `O(B_n)` es verdad si:
+
+```
+| y_n - y | <= | K*B_n | , para un n grande.
+```
+
+Para nuestro caso `| y_n - y |` el cual es equivalente a `|(a_n + b_n)/2 - y|` y este a su vez es menor que `| ( a_(n-1) + b_(n-1) )/2 - y |`. Iterando se tiene que:
+
+```
+| y_n - y | = |(a_n + b_n)/2 - y| < 1/2| ( a_(n-1) + b_(n-1) )/2 - y | < ... < (1/2)^n| ( a_0 + b_0 )/2 - y | < (1/2)^n | (a_0 + b+0)/2 |
+```
+
+Si asumimos `B_n = (1/2)^n` entonces:
+```
+| y_n - y | <= K | B_n |
+```
+para un `K` suficientemente grande. Se puede decir que el algoritmo tiene una **razón de convergencia cuadrática**.
+
+## Código
 
 A continuacíon se muestra la implementación del algoritmo en python:
 
@@ -49,4 +71,3 @@ k 	 |		n |		 E |	y
 1000 | 		3 | 10^-5  |  10
 50	 | 		4 | 10^-5  |  2.65915
 
-# Convergencia
