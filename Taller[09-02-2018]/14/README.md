@@ -6,7 +6,7 @@ A partir de `x = a` evalúe `f(x)` incrementando `x` en un valor `d`. inicialmen
 
 1. De manera formal escriba las condiciones necesarias para que la raiz exista, sea única y pueda ser calculada 
 2. Indique el orden de convergencia y estime el factor de convergencia del método. 
-3. Describa el procedimiento anterior en notación algoritmica, o en MAMAD o en Python 
+3. Describa el procedimiento anterior en notación algoritmica, o en MATLAB o en Python 
 
 ## Válidez
 
