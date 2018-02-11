@@ -31,4 +31,5 @@ while i<=n0:
 
 if i>n0:
 
+    
     print("El metodo no converge ")
