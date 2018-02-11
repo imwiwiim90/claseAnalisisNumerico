@@ -1,5 +1,3 @@
-//Segundo Metodo Punto 8
-
 from pylab import*
 
 t=arange(-pi,2*pi,0.01)
