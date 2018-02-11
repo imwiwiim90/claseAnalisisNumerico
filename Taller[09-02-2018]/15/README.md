@@ -1,4 +1,5 @@
 Se propone resolver la ecuacion integral entre 0 y x de: (5-e^u)du = 2 con el
+
 ##método del punto fijo.
 
 a.) Mediante un gráfico aproximado, o evaluando directamente, localice las raíecs
