@@ -12,7 +12,7 @@ Fin
 ```
 
 1. Recorra el algoritmo con `n = 73`.
-2. Suponga que T(n) representa la cantidad de operaciones aritmétricas de división que se realizan para resolver el problema de tamaño `n`. Encuentre `T(n)` y expresela con notación `O()`. Para obtener `T(n)` observe el hecho de que cada ciclo el valor de `n` se reduce aproximadamente a la mitad.
+2. Suponga que T(n) representa la cantidad de operaciones aritméticas de división que se realizan para resolver el problema de tamaño `n`. Encuentre `T(n)` y exprésela con notación `O()`. Para obtener `T(n)` observe el hecho de que cada ciclo el valor de `n` se reduce aproximadamente a la mitad.
 
 ## Desarrollo
 
