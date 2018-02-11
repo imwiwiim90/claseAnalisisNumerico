@@ -33,17 +33,47 @@ Expresada de la siguiente manera:
 
     f=250-192*x+28*x**2-x**3
 
-    plot(f,(x,0,20))
-
-    r=solve(f)
-
-    r[0].evalf(5)
-
-    r[2].evalf(5)
-
-    r[2].evalf(5)
 ```
 
+Luego de usar esta funcion f, dicha funcion fue resuelta evaluando la raiz en 3 espacios, brindadonos así 3 posibles 
+respuestas las cuales fueron las siguientes respectivamente:
 
+```
+    1.6963
+    
+    8.0932
+    
+    18.211
+
+```
+
+Con estos datos se definieron las posibilidades reales siendo estas la primera de 1.6963 y la de  8.0932 puesto que 
+la ultima al ser tan grande sobrepasaria el tamaño de uno de los lados.
+
+
+El segundo metodo utilizado fue en c++
 
 ## Analisis 
+
+1. Luego de haber resuelto el problema por dos metodos diferentes, es posible decir que la etapa que requiere mayor
+atencion es el analisis necesario que se le debe brindar a un problema, esto debido a que al analizar mal o no
+analizar se vuelve relativamente imposible el poder solucionar uno de los problemas planteados en este taller.
+
+2. Para formular un modelo matemático es necesario saber las leyes de matemica en general, desde polinomios hasta
+funciones avanzadas, ademas de esto es necesario tener un pensamiento logico para ver los ejercicios mas alla
+de resolver matematicamente las respuestas.
+
+3. En el ejemplo de la caja el intentar usar prueba y error nos haria perder multiples cosas, inicialmente
+materiales puesto que hablamos de cortar y armar cajas, el hacer prueba y error significa que despues de una 
+prueba es necesario crear otra caja y gastar cada vez mas material hasta encontrar lo deseado, si se realiza
+un modelo matematico es posible identificar la solucion en un solo intento, para que al efectuarlo sobre el 
+objeto real en el primer intento quede perfecto.
+
+4.
+
+5. Instrumentar computacionalmente tiene como ventaja, que nos acerca mas al ambito real en el cual siempre,
+o la mayoria de las veces disponemos de tecnologia a nuestro alcance para obtener las respuestas, ademas
+el instrumentar computacionalmente nos da la ventaja de evitar partes del desarrollo de ejercicios que 
+tienden a ser demasiado complicadas y tienden a tomar mayor tiempo del deseado.
+
+6.
