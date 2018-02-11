@@ -1,7 +1,7 @@
 # Error de precisión
 
-Calcule la propagación del error dado por las operaciones aritmétricas, para el siguiente problema:
-La velocidad de una particula es constante e igual a `4m/s`, medida con un error de `0.1m/s` durante un tiempo de recorrido de `5s`, medido con un error de `0.1s`. Determine el error absoluto y error relativo en el valor de la distancia recorrida.
+Calcule la propagación del error dado por las operaciones aritméticas, para el siguiente problema:
+La velocidad de una partícula es constante e igual a `4m/s`, medida con un error de `0.1m/s` durante un tiempo de recorrido de `5s`, medido con un error de `0.1s`. Determine el error absoluto y error relativo en el valor de la distancia recorrida.
 
 ## Desarrollo
 
