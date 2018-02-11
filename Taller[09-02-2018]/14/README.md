@@ -12,7 +12,7 @@ A partir de `x = a` evalúe `f(x)` incrementando `x` en un valor `d`. inicialmen
 
 Para comprobar que el algoritmo sea válido, se parte de que `f(x)` esta definida y es continua en el intervalo `[a,b]`. Además que `f(a)*f(b) < 0`, esto significa según el valor intermedio que existe un `c` tal que `f(c) = 0` y por lo tanto la raíz *existe*.
 
-El n-ésimo intervalo `[a_n,b_n]` se asegura que es menor al anterior por un factor de `10` ya que `d` en la n-ésima iteración es `d_n = d_0/(10^n)` lo que significa que el intervalo es más pequeño en cada iteración. Y al asegurar que el intervalo contiene signos opuestos es decir `f(a_n)*f(b_n) < 0` se asegura que siempre el intervalo contendrá a la raíz, y al ser cada vez mas pequeño convergerá a esta y por lo tanto *puede ser calculada*.
+El n-ésimo intervalo `[a_n,b_n]` se asegura que es menor al anterior por un factor de `10` ya que `d` en la n-ésima iteración es `d_n = d_(n-1)/(10^n)` lo que significa que el intervalo es más pequeño en cada iteración. Y al asegurar que el intervalo contiene signos opuestos es decir `f(a_n)*f(b_n) < 0` se asegura que siempre el intervalo contendrá a la raíz, y al ser cada vez mas pequeño convergerá a esta y por lo tanto *puede ser calculada*.
 
 Si se quiere asegurar que la raíz dentro del intervalo `[a,b]` sea única, se debe satisfacer que `f'(x)` en este intervalo seá diferente de `0`, además de estar definida y ser continua. Ya que si nunca toma el valor de `0` dentro del intervalo `f(x) < 0` ó `f(x) > 0`, por lo tanto siempre será decreciente o creciente. Y por lo tanto la intersección con `y = 0` sólo ocurrirá una sola vez. Así aseguramos que la raíz sea *única* dentro del intervalo `[a,b]`.
 
