@@ -13,7 +13,7 @@ r = 2 - e^t
 
 Graficaremos las ecuaciones para tener una idea de con lo que se está trabajando:
 
-
+![interseccion](intersection.png)
 Si se quiere hallar la itersección de ambas gráficas la imagen debe ser la misma para un `t` dado, dicho de otra manera, ambas ecuaciones se igualan y se debe cumplir que:
 
 ```
