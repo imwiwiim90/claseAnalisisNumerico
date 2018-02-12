@@ -3,7 +3,7 @@
 from math import *
 def g(x):
 
-    y=5x+e^x-1
+    y=5*x+e^x-1
 
     return y
 
