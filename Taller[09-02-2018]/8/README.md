@@ -16,7 +16,7 @@ Graficaremos las ecuaciones para tener una idea de con lo que se está trabajand
 ![interseccion](interseccion.png)
 
 
-Si se quiere hallar la itersección de ambas gráficas la imagen debe ser la misma para un `t` dado, dicho de otra manera, ambas ecuaciones se igualan y se debe cumplir que:
+Si se quiere hallar la intersección de ambas gráficas la imagen debe ser la misma para un `t` dado, dicho de otra manera, ambas ecuaciones se igualan y se debe cumplir que:
 
 ```
 cos(3*t) + e^t = 0

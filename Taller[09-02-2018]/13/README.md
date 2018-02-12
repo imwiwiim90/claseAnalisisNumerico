@@ -1,6 +1,6 @@
 # Raíz n-ésima
 
-Encuentre una fórmula iterativa de convergencia cuadrática y defina un intervalo de convergencia apropiado para calcular la raíz n-énesima de un número real. El algoritmo sólamente debe incluir operaciones aritmétricas elementales.
+Encuentre una fórmula iterativa de convergencia cuadrática y defina un intervalo de convergencia apropiado para calcular la raíz n-énesima de un número real. El algoritmo solamente debe incluir operaciones aritméticas elementales.
 
 ## Algoritmo
 
@@ -8,7 +8,7 @@ Sea `k` el número real el cual se quiere hallar su raíz, `n` al orden de la ra
 
 El algoritmo propuesto como solución es una variación del algoritmo *bisección*. 
 
-Sea `f(x) = x^n`. Supongase que se tiene un intervalo inicial [a,b] en donde `y^n` pertenece a `[f(a),f(b)]`. Y sabiendo que `f(x)` es continua, según el *teorema del valor intermedio* existe un `x` entre `[a,b]` tal que `x = y`.
+Sea `f(x) = x^n`. Supóngase que se tiene un intervalo inicial [a,b] en donde `y^n` pertenece a `[f(a),f(b)]`. Y sabiendo que `f(x)` es continua, según el *teorema del valor intermedio* existe un `x` entre `[a,b]` tal que `x = y`.
 
 La idea es acotar el intervalo de trabajo `[a,b]` por un nuevo `[a_n,b_n]` tal que ese nuevo intervalo contenga a `y` tal que `y^n = k`, siendo `y_n` la respuesta en la n-ésima iteración como `y_n = (a_n + b_n)/2`, es decir la respuesta n-ésima es el valor medio del n-ésimo intervalo, el n-ésimo intervalo viene dado de la siguiente manera:
 
@@ -22,7 +22,7 @@ Como intervalo inicial se propone el intervalo `[0,k]` ya que la raíz estará d
 
 ## Convergencia
 
-Para hallar la razón de convergencia. Sea la serie `{y_n}` que converge a un numero `y`, y para una serie `{B_n}` que se sabe que converge a `0`, la serie `{y_n}` converge a `y` con una razón de `O(B_n)` es verdad si:
+Para hallar la razón de convergencia. Sea la serie `{y_n}` que converge a un número `y`, y para una serie `{B_n}` que se sabe que converge a `0`, la serie `{y_n}` converge a `y` con una razón de `O(B_n)` es verdad si:
 
 ```
 | y_n - y | <= | K*B_n | , para un n grande.
@@ -42,7 +42,7 @@ para un `K` suficientemente grande. Se puede decir que el algoritmo tiene una **
 
 ## Código
 
-A continuacíon se muestra la implementación del algoritmo en python:
+A continuación se muestra la implementación del algoritmo en python:
 
 ```python
 def nroot(k,n,E,a=0,b=None):
@@ -59,7 +59,7 @@ def nroot(k,n,E,a=0,b=None):
 
 En este algoritmo `k` hace referencia al número real el cual se quiere hallar su raíz, `n` hace referencia al orden de la raíz. `E` es el error permitido tal que si `y = k^(1/n)` entonces `| y^n - k |  < E`. Y `a` y `b` pueden entenderse como el intervalo n-ésimo de la iteración.
 
-A continuación se muestra una tabla con algunos datos de entrada de prueba, con redondeo a 10^-5:
+A continuación, se muestra una tabla con algunos datos de entrada de prueba, con redondeo a 10^-5:
 
 k 	 |		n |		 E |	y
 ---- | ------ | ------ | ------
@@ -70,4 +70,5 @@ k 	 |		n |		 E |	y
 27	 | 		3 | 10^-5  |  3
 1000 | 		3 | 10^-5  |  10
 50	 | 		4 | 10^-5  |  2.65915
+
 

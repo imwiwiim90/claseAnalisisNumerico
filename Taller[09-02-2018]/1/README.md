@@ -28,7 +28,7 @@ El algoritmo de Horner solo requiere `n` sumas y `n` productos, por lo que se re
 
 ## Código
 
-A continuación describimos las clases y algoritmos implementados para la resolución del problema
+A continuación describimos las clases y algoritmos implementados para la resolución del problema:
 
 ### Contador de operaciones
 
@@ -53,11 +53,11 @@ class OperationCounter:
 
 El contador debe inicializarse para dar inicio al conteo de operaciones `OperationCounter.init()`. Cada vez que se realize una operación se debe llamar al incrementador del contador `OperationCounter.inc_count()`. 
 
-Para realizar el conteo de operaciones sin necesidad de llamar a la clase cada vez que se realize una operación, `OperationCounter.number(n)` devuelve una clase con el comportamiento de una variable numérica, la cual cada vez que se realize una operacion aritmetica sobre esta, incrementará el contador
+Para realizar el conteo de operaciones sin necesidad de llamar a la clase cada vez que se realize una operación, `OperationCounter.number(n)` devuelve una clase con el comportamiento de una variable numérica, la cual cada vez que se realize una operación aritmetica sobre esta, incrementará el contador
 
 ### Algoritmo Horner
 
-La implementacion del algoritmo horner `horner(poly,x)`, así como el algoritmo horner que evalua un punto sobre la derivada del polinomio `horner_diff(poly,x)` es la siguiente: 
+La implementación del algoritmo Horner `horner(poly,x)`, así como el algoritmo Horner que evalua un punto sobre la derivada del polinomio `horner_diff(poly,x)` es la siguiente: 
 
 ```python
 def horner(poly,x): 
@@ -77,7 +77,7 @@ def horner_diff(poly,x):
 
 ### Método directo
 
-La implementacion del método directo `eval_poly(poly,x)`, así como el método directo sobre la derivada del polinomio `eval_poly_diff(poly,x)` es la siguiente: 
+La implementación del método directo `eval_poly(poly,x)`, así como el método directo sobre la derivada del polinomio `eval_poly_diff(poly,x)` es la siguiente: 
 
 ```python
 def eval_poly(poly,x):

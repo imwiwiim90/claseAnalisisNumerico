@@ -1,6 +1,6 @@
 ### Error de redondeo inferior
 
-Suponga que un dispositivo solo puede almacenar únicamente los cuatro primeros digitos decimales de cada número real, y trunca los restantes (redondeo inferior). Calcule el error de redondeo si se quiere almacenar el número `536.78`. Tenga en cuenta lo siguiente:
+Suponga que un dispositivo solo puede almacenar únicamente los cuatro primeros dígitos decimales de cada número real, y trunca los restantes (redondeo inferior). Calcule el error de redondeo si se quiere almacenar el número `536.78`. Tenga en cuenta lo siguiente:
 
 En general si `n` es la cantidad de enteros del número normalizado con potencias de `10`, y `m` es la cantidad de cifras decimales que se pueden almacenar en el dispositivo, entonces si se truncan los decimales sin ajustar la cifra anterior, el error de redondeo absoluto esta acotado por <a href='maxref'></a>:
 
