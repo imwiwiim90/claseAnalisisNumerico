@@ -24,4 +24,4 @@ b.) Usando la funcion f(x) obtenida previamente se opto por graficar para
 obtener las raices reales de la funcion, la grafica obtenida fue la siguiente:
 
 
-![d_t](d'%28t%29.png)
+![d_t](d_%28t%29.png)
