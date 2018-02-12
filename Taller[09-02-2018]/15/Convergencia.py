@@ -3,9 +3,9 @@
 from math import *
 def g(x):
 
-    x=5-exp^u
+    y=5x+e^x-1
 
-    return X
+    return y
 
 p0=0
 
