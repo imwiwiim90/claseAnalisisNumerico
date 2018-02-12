@@ -1,7 +1,9 @@
-d_t <- funtion(t) (5x - e^x + 1)
+d_t <-function(t)((5*t)-exp(t)+1)
+dd_t <- function(t) {}
+body(dd_t) <- D(body(d_t),'t')
 
 
-curve (d_t, -3, 3)
-dev.off()
+png("d_t.png")
+curve(d_t,-3,3)
 
 
