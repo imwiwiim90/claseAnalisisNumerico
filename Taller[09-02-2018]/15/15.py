@@ -3,15 +3,15 @@
 from math import *
 def g(x):
 
-    y=0.5*sqrt(10-x**3)
+    x=5-exp^u
 
-    return y
+    return X
 
 p0=0
 
 tol=0.001
 
-n0=50
+n0=5
 
 i=1
 
