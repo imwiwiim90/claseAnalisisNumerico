@@ -11,7 +11,7 @@ r = 2 - e^t
 
 ## Análisis
 
-Graficaremos las ecuaciones para tener una idea de con lo que se está trabajando:
+Graficaremos las ecuaciones para tener una idea de con lo que se está trabajando, graficando en rojo la ecuación exponencial, y en negro la función coseno:
 
 ![interseccion](interseccion.png)
 
