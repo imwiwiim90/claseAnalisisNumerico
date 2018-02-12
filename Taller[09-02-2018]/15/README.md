@@ -18,10 +18,18 @@ y estime el error de truncamiento en el ultimo resultado.
 
 
 a.) Luego de resolver la integral se obtiene que f(x) = 5x + e^x - 1, con este 
-valor es posible trabajar en los puntos siguientes.7
+valor es posible trabajar en los puntos siguientes.
 
 b.) Usando la funcion f(x) obtenida previamente se opto por graficar para 
 obtener las raices reales de la funcion, la grafica obtenida fue la siguiente:
 
-
 ![d_t](d_t.png)
+
+Esta grafica fue obtenida utilizando R en el archivo graph.R.
+
+Luego de analizar la grafica, es posible decir que la raiz real se encuentra en
+aproximadamente 2,66.
+
+c.) 
+
+d.) 
