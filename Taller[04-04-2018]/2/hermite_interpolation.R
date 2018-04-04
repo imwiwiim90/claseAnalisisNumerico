@@ -1,5 +1,8 @@
 library('Ryacas')
+#install.packages('rootSolve',repos = "http://cran.us.r-project.org")
+library('rootSolve')
 
+options(warn=-1)
 hermite_interpolation <- function(x,y,dy) {
 	n <- length(x)
 	D <- matrix(0,2*n,2*n)
@@ -44,11 +47,21 @@ points_x <- seq(0.5, 4, 0.05)
 points_y <- Eval(f,list(x = points_x))
 
 h_points_y <- Eval(h_poly,list(x = points_x))
+
+if (FALSE) {
 png('interpolacion.png')
 plot(points_x,points_y,type='l',xlab='x',ylab='y')
 lines(points_x,h_points_y,col='red')
 points(x,y)
 legend('topleft',legend=c('ln(x)','P(x)'),col=c('blue','red'), lty=c(1,1), cex=0.8)
+}
 
+# CÁLCULO DEL ERROR
+f_error <- deriv(((h_poly) - f)^2)
+# calcular el punto de máximo error
+zero <- uniroot.all(function(x) {Eval(f_error,list(x=x))},c(1,2))[1]
+error <- abs(Eval(h_poly - f,list(x=zero)))
+print(error)
+options(warn=0)
 
 

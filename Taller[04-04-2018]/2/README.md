@@ -48,3 +48,14 @@ A continuación se muestran las gráficas del polinomio Hermite (rojo) y la func
 ![interpolacion](interpolacion.png)
 
 ## b
+
+Dar una estimación del error de interpolación en el intervalo de `[1,2]`
+
+
+Para la estimación del error se calculará el error propuesto en el teorema de Weierstrass, para este caso el menor de estos errores, Es decir el máximo error en el intervalo `[1,2]` siendo el error `| f(x) - P(x) |`, por simplicidad primero se hallara el punto donde `( f(x) - P(x) )^2` sea máximo y con este punto se hallará el error según la primera definición.
+
+El punto donde ocurre el mayor error es en `x = 1.465783` y el error en este punto es de:
+
+```
+e = 0.003642013
+```
