@@ -1,0 +1,13 @@
+1. Muestre las operaciones realizadas.
+2. solucionar por dos metodos distintos.
+2.1. detectar cual es el punto critico de ese algoritmo.
+2.2. si necesita saber si la funcion es continua, condiciones iniciales.
+2.3. que es mas critico? error de truncamiento o le error redondeo.
+3. lo apliquen, implementar en R.
+5. como va cambiando el error.
+6. T equivalente al O pero en directo, la cantidad de operaciones para aplicar ese algoritmo.
+8. la implementacion hay que tener en cuenta graficar en coordenadas polares.
+13. escribir una formula iterativa que converja en forma cuadratica.
+14. implementarlo.
+15. teorema fundamental del calculo. integrar o usar teorema fundamental del calculo.
+
