@@ -48,13 +48,12 @@ points_y <- Eval(f,list(x = points_x))
 
 h_points_y <- Eval(h_poly,list(x = points_x))
 
-if (FALSE) {
+
 png('interpolacion.png')
 plot(points_x,points_y,type='l',xlab='x',ylab='y')
 lines(points_x,h_points_y,col='red')
 points(x,y)
 legend('topleft',legend=c('ln(x)','P(x)'),col=c('blue','red'), lty=c(1,1), cex=0.8)
-}
 
 # CÁLCULO DEL ERROR
 f_error <- deriv(((h_poly) - f)^2)
