@@ -49,7 +49,7 @@ points_y <- Eval(f,list(x = points_x))
 h_points_y <- Eval(h_poly,list(x = points_x))
 
 
-png('interpolacion.png')
+png('interpolacio.png')
 plot(points_x,points_y,type='l',xlab='x',ylab='y')
 lines(points_x,h_points_y,col='red')
 points(x,y)
