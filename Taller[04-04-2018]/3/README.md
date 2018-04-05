@@ -62,7 +62,7 @@ neville <- function(polynomials, x, y) {
 
 La función gamma en los valores de interes es `F(0.25,1,2) =  0.0264990` al generar los polinomios tenemos los siguientes valores con los datos elegidos en el punto [a](#a):
 
-----------
+----------|------------|------------|------------|------------|-----------
 0.0000000 |			   |			|			 |			  | 
 0.0017295 | 0.00720625 | 			|			 |			  | 
 0.0066491 | 0.01730823 | 0.02825205 |			 |			  | 
