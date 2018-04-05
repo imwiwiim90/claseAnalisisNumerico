@@ -29,9 +29,12 @@ eval_polynomial_matrix <- function(polynomials,x) {
 	A
 }
 
-pol1 <- neville(NULL,1,0.7651977)
-pol2 <- neville(pol1,1.3,0.6200860)
-pol3 <- neville(pol2,1.6,0.4554022)
 
-print(pol3)
-print(eval_polynomial_matrix(pol3,1.5))
+x <- c(0 ,0.06,0.12,0.18,0.24,0.30)
+y <- c(0,0.0017295,0.0066491,0.0143811,0.0245814,0.0369363)
+
+pol <- NULL
+for (i in 1:length(x)) {
+	pol <- neville(pol,x[i],y[i])
+}
+print(eval_polynomial_matrix(pol,0.25))
