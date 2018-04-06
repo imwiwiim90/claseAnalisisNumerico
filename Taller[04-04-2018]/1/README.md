@@ -4,6 +4,7 @@
 
 Usando el metodo de lagrange, rapidamente se noto como no seria posible realizar la construccion del polinomio, esto debido a que lagrange obtiene solo los datos de los vectores X y Y  realizando asi las operaciones internamente, de esta manera usandolo de manera base lo maximo que se logro obtener fue un polinomio de grado 2 puesto que no hubo forma de integrar el punto de la derivada de la funcion f'(0)=1, aunque de haber logrado implementar dicha derivada se pudo notar algo en la forma en la que se resuelve este metodo, esto en comparacion al metodo 2 utilizado.
 
+```R
 lagrange.poly <- function(x, y) {
   
   l <- list() # List to store Lagrangian polynomials L_{1,2,3,4}
@@ -33,7 +34,7 @@ lagrange.poly <- function(x, y) {
 
   return(sympy(paste("simplify(", eq, ")")))
 }
-
+```
 
 Como visto en el codigo anterior se nota como para realizar las operaciones internas se pasa por un for() anidado, este viendose directamente afectado por el tamaño de nuestro vector de variables x, significando que a razon de mayor cantidad de datos en el vector, cada vez sera mas y mas demorado la resolucion del problema, igualmente notamos como obteniendo el polinomio de grado 2 ya muestra signos de demora al ofrecernos la respuesta.
 
