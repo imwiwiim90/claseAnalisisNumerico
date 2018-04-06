@@ -12,10 +12,13 @@ Inspeccionando la formula dada es correcta cuando nuestro x es igual a xj y J=0,
 Esta es (n+1) veces difrenciable y se anula en los (n+2) puntos distintos x,x0,x1,x2,...,xn. De aqui una sucesiva aplicacion del teorema de Rolle conduce a la existencia de un punto c(x), comprendido entre x0 y xn tal que: ![Formula2](formula2.PNG), el resultado se obtiene mediante un simple cambio de terminos luego de derivar n+1 veces ambos lados y remplazar t por c(x).
 
 Sea g una funcion continua definida en (x0,xn) definimos: 
+
 ![Formula3](formula3.PNG)
 
 Una medida aceptable del error que produce P respecto a f es precisamente:
+
 ![Formula4](formula4.PNG)
 
-Luego
+Luego:
+
 ![Formula5](formula5.PNG)
