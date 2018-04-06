@@ -40,6 +40,53 @@ Como visto en el codigo anterior se nota como para realizar las operaciones inte
 
 ## Metodos 2: Hermite.
 
+Usando el metodo de Hermite, usado en el punto 2, se pudo obtener un resultado mayor a un polinomio de tercer grado, esto debido a que para poder hacer uso de este metodo fue necesario utilizar dos puntos adicionales de derivadas de la funcion para f'(1)=0 y f'(2)=0, esto debido a la manera en la que el programa obtiene las derivadas y las reemplaza en la funcion para obtener el polinomio.
+
+```R
+
+options(warn=-1)
+hermite_interpolation <- function(x,y,dy) {
+  n <- length(x)
+  D <- matrix(0,2*n,2*n)
+  
+  for (i in 1:n) {
+    D[1,i*2-1] <- y[i]
+    D[1,i*2] <- y[i]
+    D[2,i*2-1] <- dy[i]
+  }
+  for (i in 1:(n-1)) {
+    D[2,i*2] <- (D[1,i*2+1] - D[1,i*2])/(x[i+1] - x[i])
+  }
+  
+  for (i in 3:(n*2)) {
+    for (j in 1:(n*2-i+1)) {
+      D[i,j] <- (D[i-1,j+1] - D[i-1,j])/( x[ceiling((i+j-1)/2)] - x[ceiling(j/2)] )
+    }
+  }
+  x_ <- Sym('x')
+  hermite_poly = y[1]
+  mult_exp = expression(1)
+  for (i in 2:(n*2)) {
+    mult_exp = mult_exp*(x_ - x[ceiling((i-1)/2)])
+    hermite_poly = hermite_poly + D[i,1]*mult_exp
+  } 
+  hermite_poly = Simplify(hermite_poly)
+}
+
+x <- c(0, 1, 2)
+y <- c(10, 15, 5)
+dy <- c(1,0,0)
+
+h_poly = hermite_interpolation(x,y,dy)
+print(h_poly)
+
+```
+Como se pudo evidenciar en el codigo anterior, para realizar las operaciones se hace uso de 4 for(), ninguno de estos superando el numero de datos en el vector x, al no estar anidados, realiza cada for secuencialmente, y con esto al correrlo obtenemos un valor casi inmediato, este valor como dicho anteriormente no es de grado 3, en vez de esto es de grado 5, como se muestra a continuacion.
+
+```
+expression(4 * x^5 - 12.75 * x^4 + 4.5 * x^3 + 8.25 * x^2 + x + 
+    10)
+```
 
 ## Metodo mas optimo.
 
