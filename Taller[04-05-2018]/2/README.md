@@ -30,7 +30,7 @@ Utilizando los tres primeros terminos de la serie además se tiene que:
 
 ![eq6](eq6.png)
 
-Ambos resultados se pueden apreciar en la siguiente gráfica. Donde la linea azul es la solución por el método de Taylor, y la naranja es la solución analítica:
+El desarrollo se puede ver en el código en [taylor.py](taylor.py), ambos resultados se pueden apreciar en la siguiente gráfica. Donde la linea azul es la solución por el método de Taylor, y la naranja es la solución analítica:
 
 ![plots](plots.png)
 
